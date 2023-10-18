@@ -1,0 +1,201 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0);
+  margin: 0;
+  padding: 0;
+  background: url("bg1.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; /* Adjust the size percentages for width and height */
+  background-attachment: fixed;
+  background-position: center;
+}
+
+li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+}
+link {
+  text-decoration: none;
+}
+/* Add this to your CSS file */
+.nav-link {
+  text-decoration: none; /* Remove text underline */
+  color: inherit; /* Optionally, set the link color to inherit the parent color */
+}
+/* Neon Glow Effect */
+li {
+  list-style: none;
+  display: inline;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 24px;
+  position: relative;
+  animation: neon 2s linear infinite;
+  color: #1a1a1a;
+  text-shadow: 0 0 10px #01ff70, 0 0 20px #01ff70, 0 0 30px #01ff70,
+    0 0 40px #01ff70, 0 0 50px #01ff70;
+  color: rgb(42, 166, 40);
+}
+
+@keyframes neon {
+  0% {
+    text-shadow: 0 0 10px #01ff70, 0 0 20px #01ff70, 0 0 30px #01ff70,
+      0 0 40px #01ff70, 0 0 50px #01ff70;
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 10px #01ff70, 0 0 20px #01ff70, 0 0 30px #01ff70,
+      0 0 40px #01ff70, 0 0 50px #01ff70;
+  }
+}
+
+.neon-text {
+  font-size: 24px;
+  position: relative;
+  animation: shimmer 2s linear infinite, colorChange 5s linear infinite;
+  color: #8e44ad; /* Initial neon color (purple) */
+  text-shadow: 0 0 10px #8e44ad, 0 0 20px #8e44ad, 0 0 30px #8e44ad,
+    0 0 40px #8e44ad, 0 0 50px #8e44ad;
+}
+
+@keyframes shimmer {
+  0% {
+    text-shadow: 0 0 10px #8e44ad, 0 0 20px #8e44ad, 0 0 30px #8e44ad,
+      0 0 40px #8e44ad, 0 0 50px #8e44ad;
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 0 10px #8e44ad, 0 0 20px #8e44ad, 0 0 30px #8e44ad,
+      0 0 40px #8e44ad, 0 0 50px #8e44ad;
+  }
+}
+
+@keyframes colorChange {
+  0% {
+    color: #8e44ad; /* Purple neon color */
+  }
+  50% {
+    color: #01ff70; /* Green neon color */
+  }
+  100% {
+    color: #3498db; /* Blue neon color */
+  }
+}
+h1 {
+  margin-left: 50px;
+}
+.profile {
+  width: 7%;
+  height: 8%;
+  border-radius: 90%;
+  margin-left: 650px;
+  margin-top: 0px;
+  padding-top: 0px;
+  margin-bottom: 0px;
+}
+.skill-cards {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; /* Move cards to a bit lower */
+  margin-top: 20px;
+}
+
+.skill-card {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #f39c12; /* Light red border color */
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  animation: blow 2s linear infinite; /* Add the blowing animation */
+  background: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes blow {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.skill-card h2 {
+  font-size: 24px;
+  color: #8e44ad; /* Purple color */
+}
+
+.skill-card p {
+  font-size: 16px;
+  color: #c2175e;
+}
+
+.about-container {
+  padding: 20px;
+}
+.about-container {
+  padding: 20px;
+}
+.about-content {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.5;
+}
+
+.about-content h2 {
+  font-size: 24px;
+  color: #3498db;
+}
+h2 {
+  color: #01ff70;
+}
